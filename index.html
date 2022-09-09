@@ -2,21 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="public/styles.css">
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 </head>
-<body class="font-custom">
-
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
+<body class="flex justify-center items-center min-h-screen font-poppins bg-[url('../images/bg-mobile.svg')] bg-no-repeat bg-Violet md:bg-center md:bg-cover">
+  <main class="flex-col md:flex-row justify-between gap-y-16 max-w-sm md:max-w-none flex p-10 md:relative" >
+    <div class="md:basis-3/5">
+      <img class="w-40 md:w-52 mb-16" src="./images/logo.svg" alt="logo">
+      <img src="./images/illustration-mockups.svg" alt="illustration-mockups">
+    </div>
+    <div class="md:basis-2/5 flex flex-col md:justify-center gap-y-10 ">
+      <div class="flex flex-col gap-y-5 text-center md:text-left text-white">
+        <h1 class="text-2xl font-bold md:text-5xl md:leading-relaxed" >
+          Build The Community Your Fans Will Love
+        </h1>
+        
+        <p>
+          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+          Create connections with your users as you engage in genuine discussion. 
+        </p>
+        <button class="bg-white p-3 md:p-4 text-Violet text-sm md:text-base rounded-full w-52 self-center md:self-start shadow-md hover:text-white hover:bg-SoftMagenta">
+          Register
+        </button>
+      </div>
+      <div class="flex justify-center gap-3 md:absolute right-12 bottom-6 ">
+        <img class="hover:cursor-pointer hover:bg-SoftMagenta rounded-full ring-SoftMagenta hover:ring-2" src="./images/favicon-32x32.png" alt="logo">
+        <img class="hover:cursor-pointer hover:bg-SoftMagenta rounded-full ring-SoftMagenta hover:ring-2" src="./images/favicon-32x32.png" alt="logo">
+        <img class="hover:cursor-pointer hover:bg-SoftMagenta rounded-full ring-SoftMagenta hover:ring-2" src="./images/favicon-32x32.png" alt="logo">
+      </div>
+    </div>
+    
+  </main>
 </body>
 </html>
